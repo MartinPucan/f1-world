@@ -1,18 +1,27 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Header from './Header'
+import styles from '../styles/Home.module.scss'
+import { Button } from "@blueprintjs/core"
 
 export default function Home() {
+  const dfCenter = `df-center`;
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>F1 World</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div className={styles.dfCenter}>
+          <h1 className={styles.title}>
+            Welcome to F1 world
+          </h1>
+          <img src="/formula-1.svg" alt="Vercel Logo" className={styles.logo} />
+        </div>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -58,6 +67,7 @@ export default function Home() {
         >
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <Button intent="success" text="button content" />
         </a>
       </footer>
     </div>

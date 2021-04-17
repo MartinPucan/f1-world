@@ -1,6 +1,7 @@
+$clr-blue: #0070f3;
+
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +37,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: $clr-blue;
   text-decoration: none;
 }
 
@@ -111,7 +112,14 @@
 }
 
 .logo {
-  height: 1em;
+  padding-left: .75em;
+  height: 7em;
+}
+
+.dfCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
